@@ -1,1 +1,38 @@
-<h1>This is a test template</h1>
+<h3>Link HTML</h3>
+<a href="index.html">Home</a>
+
+<h3>Link javascript</h3>
+<a href="javascript: void(0)" id="link_show_stuff">Show some stuff</a>
+<div id="show_stuff" style="display:none;">Some stuff</div>
+
+<h3>Link in a list HTML</h3>
+<ul>
+  <li><a href="index.html">Home</a></li>
+</ul>
+<div id="show_stuff" style="display:none;">Some stuff</div>
+
+<h3>Bound List Element (Li) - bound via javascript</h3>
+<ul>
+  <li class="js_list_element">Click this list element</li>
+</ul>
+<div id="list_show_stuff" style="display:none;">Some some list stuff</div>
+
+<h3>Form Submit HTML</h3>
+<form action="index.html">
+  <input id="submit" type="submit" value="Submit HTML">
+</form>
+
+<h3>Form Submit Javascript</h3>
+<form id="js_form" action="javascript:void(0);">
+  <input id="submit" type="submit" value="Submit Javascript">
+</form>
+<div id="show_form_stuff" style="display:none;">Some Form stuff</div>
+
+<h3>Select Box</h3>
+<select>
+  <option>Beds</option>
+  <option data-dim_id="1z141xt" data-dim_name="1-beds" id="1z141xt">1 Bedroom</option>
+  <option data-dim_id="1z141y8" data-dim_name="2-beds" id="1z141y8">2 Bedrooms</option>
+  <option data-dim_id="1z141xs" data-dim_name="3-beds" id="1z141xs">3 Bedrooms</option>
+  <option data-dim_id="1z141to" data-dim_name="4-beds" id="1z141to">4 Bedrooms</option>
+</select>

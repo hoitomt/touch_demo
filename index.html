@@ -1,9 +1,69 @@
 <!DOCTYPE html>
   <head>
-    <title>Touch Demo</title>
+    <title>Touch Demo - No Helper</title>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js" ></script>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/touch_logger.js"></script>
   </head>
   <body>
-    Look at my body... tag
+    <a href="index.html">Home</a>
+    <a href="fastclick.html">Fastclick</a>
+
+    <h1>Touch Demonstration</h1>
+    <p>
+      This page is intended to demonstrate the benefits of using a 3rd party library
+      to handle click and touch events. This page should be accessed from a touch device
+      (tablet, smartphone, or equivalent). This page lists various UI elements.
+      Some have javascript listeners and some use standard HTMl actions.
+    </p>
+
+    <h2>No 3rd Party Library</h2>
+    <p>Notes</p>
+    <ul>
+      <li>
+        There is a delay between the time that you tap on the element and the element
+        performs its intended function
+      </li>
+    </ul>
+
+    <h3>Link HTML</h3>
+    <a href="index.html">Home</a>
+
+    <h3>Link javascript</h3>
+    <a href="javascript: void(0)" id="link_show_stuff">Show some stuff</a>
+    <div id="show_stuff" style="display:none;">Some stuff</div>
+
+    <h3>Link in a list HTML</h3>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+    <div id="show_stuff" style="display:none;">Some stuff</div>
+
+    <h3>Bound List Element (Li) - bound via javascript</h3>
+    <ul>
+      <li class="js_list_element">Click this list element</li>
+    </ul>
+    <div id="list_show_stuff" style="display:none;">Some some list stuff</div>
+
+    <h3>Form Submit HTML</h3>
+    <form action="index.html">
+      <input id="submit" type="submit" value="Submit HTML">
+    </form>
+
+    <h3>Form Submit Javascript</h3>
+    <form id="js_form" action="javascript:void(0);">
+      <input id="submit" type="submit" value="Submit Javascript">
+    </form>
+    <div id="show_form_stuff" style="display:none;">Some Form stuff</div>
+
+    <h3>Select Box</h3>
+    <select>
+      <option>Beds</option>
+      <option data-dim_id="1z141xt" data-dim_name="1-beds" id="1z141xt">1 Bedroom</option>
+      <option data-dim_id="1z141y8" data-dim_name="2-beds" id="1z141y8">2 Bedrooms</option>
+      <option data-dim_id="1z141xs" data-dim_name="3-beds" id="1z141xs">3 Bedrooms</option>
+      <option data-dim_id="1z141to" data-dim_name="4-beds" id="1z141to">4 Bedrooms</option>
+    </select>
   </body>
 
 </html>

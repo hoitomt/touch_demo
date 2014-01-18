@@ -1,27 +1,33 @@
 <!DOCTYPE html>
   <head>
     <title>Touch Demo - No Helper</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.8.3.min.js" ></script>
     <script src="javascripts/main.js"></script>
     <script src="javascripts/touch_logger.js"></script>
+    <script type="text/javascript">
+      HomeLink = 'index.html'
+    </script>
   </head>
-  <body>
-    <nav></nav>
-    <h1>Touch Demonstration</h1>
-    <p>
-      This page is intended to demonstrate the benefits of using a 3rd party library
-      to handle click and touch events. This page should be accessed from a touch device
-      (tablet, smartphone, or equivalent). This page lists various UI elements.
-      Some have javascript listeners and some use standard HTMl actions.
-    </p>
-    <h2>No 3rd Party Library</h2>
-    <p>Notes</p>
-    <ul>
-      <li>
-        There is a delay between the time that you tap on the element and the element
-        performs its intended function
-      </li>
-    </ul>
-    <section id="html-elements"></section>
+  <body style>
+    <div class="container">
+      <h1>Touch Demonstration</h1>
+      <p>
+        This page is intended to demonstrate the benefits of using a 3rd party library
+        to handle click and touch events. This page should be accessed from a touch device
+        (tablet, smartphone, or equivalent). This page lists various UI elements.
+        Some have javascript listeners and some use standard HTMl actions.
+      </p>
+      <h2>No 3rd Party Library</h2>
+      <p>Notes</p>
+      <ul>
+        <li>
+          There is a delay between the time that you tap on the element and the element
+          performs its intended function
+        </li>
+      </ul>
+      <section id="html-elements"></section>
+    </div>
   </body>
 </html>

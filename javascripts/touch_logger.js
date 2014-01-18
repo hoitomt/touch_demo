@@ -39,7 +39,7 @@ addLogPanelToUi = function() {
   panel = "<div id=" + panel + " style='" + style + "'>";
   panel += 'Touch Logger</br>';
   panel += '</div>';
-  return $('body').prepend(panel);
+  return $('body').append(panel);
 };
 
 $(function() {

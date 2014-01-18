@@ -1,10 +1,13 @@
 <!DOCTYPE html>
   <head>
     <title>Touch Demo - Fastclick</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.8.3.min.js" ></script>
     <script src="javascripts/fastclick.js" ></script>
     <script src="javascripts/main.js"></script>
     <script type="text/javascript">
+      HomeLink = 'fastclick.html'
       $(function() {
         FastClick.attach(document.body);
         console.log("Fast Click is loaded");
@@ -12,12 +15,13 @@
     </script>
   </head>
   <body>
-    <nav></nav>
-    <h2>Fastclick</h2>
-    <p>Notes</p>
-    <ul>
-      <li>No known drawbacks at this time</li>
-    </ul>
-    <section id="html-elements"></section>
+    <div class="container">
+      <h2>Fastclick</h2>
+      <p>Notes</p>
+      <ul>
+        <li>No known drawbacks at this time</li>
+      </ul>
+      <section id="html-elements"></section>
+    </div>
   </body>
 </html>
